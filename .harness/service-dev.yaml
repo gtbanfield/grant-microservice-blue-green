@@ -1,0 +1,29 @@
+service:
+  name: grant-microservice-blue-green
+  identifier: grantmicroservice-blue-green
+  orgIdentifier: default
+  projectIdentifier: IDA
+  serviceDefinition:
+    spec:
+      manifests:
+        - manifest:
+            identifier: INT
+            type: HelmChart
+            spec:
+              store:
+                type: Github
+                spec:
+                  connectorRef: account.Github
+                  gitFetchType: Branch
+                  folderPath: "/helm-charts"
+                  repoName: helm-charts
+                  branch: main
+              subChartPath: ""
+              valuesPaths:
+              #- manifests/grant-microservice/sit/configmap/configmap.yaml
+              - manifests/grant-microservice/sit/immutable/values.yaml
+              skipResourceVersioning: false
+              enableDeclarativeRollback: false
+              helmVersion: V3
+              fetchHelmChartMetadata: false
+    type: Kubernetes

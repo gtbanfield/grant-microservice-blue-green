@@ -1,0 +1,15 @@
+inputSet:
+  name: grant-microservice-blue-green
+  tags: {}
+  identifier: grantmicroservicebluegreen
+  orgIdentifier: default
+  projectIdentifier: IDA
+  pipeline:
+    identifier: grant-microservice-blue-green
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>

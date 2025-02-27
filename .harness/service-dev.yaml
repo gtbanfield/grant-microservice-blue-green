@@ -20,8 +20,8 @@ service:
                   branch: main
               subChartPath: ""
               valuesPaths:
-              #- manifests/grant-microservice/sit/configmap/configmap.yaml
-              - manifests/grant-microservice/sit/immutable/values.yaml
+              - manifests/green/sit/configmap/configmap.yaml
+              - manifests/green/sit/immutable/values.yaml
               skipResourceVersioning: false
               enableDeclarativeRollback: false
               helmVersion: V3

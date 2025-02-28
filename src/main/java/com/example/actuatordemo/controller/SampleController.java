@@ -22,7 +22,7 @@ import java.util.Map;
 public class SampleController {
 
     @GetMapping("/")
-    public String sayHello(@RequestParam(value = "name", defaultValue = "Guest") String name) {
+    public String sayHello(@RequestParam(value = "name", defaultValue = "Grant") String name) {
         return "Hello " + name + "!!";
     }
 

@@ -5,7 +5,7 @@ import org.springframework.boot.actuate.endpoint.annotation.ReadOperation;
 import org.springframework.stereotype.Component;
 
 @Component
-@Endpoint(id = "green")
+@Endpoint(id = "blue")
 public class CustomEndpoint {
 
     @ReadOperation

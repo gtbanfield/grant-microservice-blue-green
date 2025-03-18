@@ -20,7 +20,7 @@ service:
                   branch: main
               subChartPath: ""
               valuesPaths:
-              - manifests/green/sit/immutable/values.yaml
+              - manifests/blue/sit/immutable/values.yaml
               skipResourceVersioning: false
               enableDeclarativeRollback: false
               helmVersion: V3

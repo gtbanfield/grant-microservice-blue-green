@@ -38,7 +38,7 @@ public class SampleController {
         return "Result";
     }
 
-    @GetMapping(path = "green", produces = MediaType.TEXT_PLAIN_VALUE)
+    @GetMapping(path = "test", produces = MediaType.TEXT_PLAIN_VALUE)
     public ResponseEntity<String> headersDemo(@RequestHeader(name = "x-lbg-header") String header) {
         System.out.println("x-lbg-header : " + header);
         String response = "x-lbg-header:" + header;

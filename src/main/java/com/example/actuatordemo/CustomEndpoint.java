@@ -10,6 +10,6 @@ public class CustomEndpoint {
 
     @ReadOperation
     public String customEndpoint() {
-        return "Hi Grant, this is Green endpoint!";
+        return "Hi Grant, this is Green plus one endpoint!";
     }
 }

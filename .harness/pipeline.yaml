@@ -73,14 +73,14 @@ pipeline:
                       type: BuildAndPushDockerRegistry
                       spec:
                         tags: <+input>
-    - stage:
-        name: Approval
-        identifier: Approval
-        tags: {}
-        template:
-          templateRef: Approval
-          versionLabel: v0.1.0
-          gitBranch: main
+    # - stage:
+    #     name: Approval
+    #     identifier: Approval
+    #     tags: {}
+    #     template:
+    #       templateRef: Approval
+    #       versionLabel: v0.1.0
+    #       gitBranch: main
     - stage:
         name: BlueGreen
         identifier: BlueGreen

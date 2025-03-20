@@ -83,7 +83,7 @@
 	</dependencies>
 
 	<build>
-        <finalName>api3</finalName>
+        <finalName>api2</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>

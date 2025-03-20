@@ -1,8 +1,6 @@
 package com.example.actuatordemo.controller;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
@@ -12,8 +10,6 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestHeader;
 
 import java.util.List;
 import java.util.Map;
@@ -43,6 +39,19 @@ public class SampleController {
         System.out.println("x-lbg-header : " + header);
         String response = "x-lbg-header:" + header;
         return new ResponseEntity<>(response, HttpStatus.OK);
+    }
+
+    @RequestMapping("/api2")
+    public class Api2Controller {
+
+        @PostMapping("/receive")
+        public ResponseEntity<String> receiveData(@RequestBody Map<String, Object> data) {
+            System.out.println("Received data: " + data);
+
+            // Do something with the data
+
+            return ResponseEntity.ok("Data processed successfully");
+        }
     }
 
 }

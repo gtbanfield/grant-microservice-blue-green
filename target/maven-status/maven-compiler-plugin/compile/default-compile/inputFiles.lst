@@ -1,6 +1,0 @@
-/Users/gtbanfield/GIT/grant-microservice-blue-green/src/main/java/com/example/actuatordemo/CustomEndpoint.java
-/Users/gtbanfield/GIT/grant-microservice-blue-green/src/main/java/com/example/actuatordemo/service/ApiAService.java
-/Users/gtbanfield/GIT/grant-microservice-blue-green/src/main/java/com/example/actuatordemo/controller/SampleController.java
-/Users/gtbanfield/GIT/grant-microservice-blue-green/src/main/java/com/example/actuatordemo/health/CustomHealthIndicator.java
-/Users/gtbanfield/GIT/grant-microservice-blue-green/src/main/java/com/example/actuatordemo/config/WebClientConfig.java
-/Users/gtbanfield/GIT/grant-microservice-blue-green/src/main/java/com/example/actuatordemo/ActuatorDemoApplication.java

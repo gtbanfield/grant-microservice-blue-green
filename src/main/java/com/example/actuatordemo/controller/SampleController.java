@@ -1,3 +1,5 @@
+package com.example.actuatordemo.controller;
+
 import com.example.actuatordemo.service.ApiAService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -14,3 +16,4 @@ public class SampleController {
         return apiAService.getDataFromApiB();
     }
 }
+

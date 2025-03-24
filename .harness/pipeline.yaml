@@ -68,11 +68,7 @@ pipeline:
                   template:
                     templateRef: Docker
                     versionLabel: v0.1.0
-                    gitBranch: main
-                    templateInputs:
-                      type: BuildAndPushDockerRegistry
-                      spec:
-                        tags: <+input>
+                    gitBranch: main       
     - stage:
         name: Approval
         identifier: Approval
@@ -87,4 +83,4 @@ pipeline:
         tags: {}
         template:
           templateRef: BlueGreen
-          versionLabel: v0.1.0
+          versionLabel: v0.1.0          
